@@ -1,0 +1,33 @@
+{
+  "name": "mcp-data-gouv-server",
+  "version": "1.0.0",
+  "description": "Serveur MCP pour accéder aux données de data.gouv.fr",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node --esm src/server.ts",
+    "test:apis": "ts-node --esm src/test-apis.ts"
+  },
+  "keywords": [
+    "mcp",
+    "data-gouv",
+    "api",
+    "datasets",
+    "france"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
